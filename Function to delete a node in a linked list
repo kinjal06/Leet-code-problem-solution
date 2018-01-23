@@ -1,0 +1,13 @@
+#includ<stio.h>
+#include<stdlib.h>
+struct node{
+  int data;
+  struct node* next;
+};
+
+void delete(struct node * node){
+      struct node * temp = node->next;
+      node->data = temp->data;
+      node->next = temp->next;
+      free(temp);
+}
