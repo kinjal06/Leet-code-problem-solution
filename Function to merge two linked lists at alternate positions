@@ -1,0 +1,13 @@
+void merge (struct node * a, struct node *b){
+          struct node * a_curr = a, *b_curr = b;
+          struct node * a_next, *b_next;
+          while(a_curr !=Null && b_curr !=Null){
+                  a_next = a_curr->next;
+                  b_next = b_curr->next;
+                  a_curr->next = b_next;
+                  b_curr->next = a_next;
+                  a_curr = a_next;
+                  b_curr = b_next;
+                  *b = b_curr
+          }
+}
