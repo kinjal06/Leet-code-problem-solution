@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int subArray(int a[],int len, int sum)
+{
+	int current_sum = a[0];
+	int start =0,i;
+	for(i=0;i<len;i++){
+		while(current_sum>sum && start<i-1){
+			current_sum = current_sum- a[start];
+			start++;
+		}
+		if(current_sum==sum){
+			printf("the subarray is from %d to %d",start,i-1);
+			return 1;
+		}
+		if(i<length){
+			current_sum = current_sum+a[i];
+		}
+		}
+		printf("No subarray found"):
+		return 0;
+}
