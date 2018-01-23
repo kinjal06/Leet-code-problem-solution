@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int sort(int a[],int len)
+void sort(int a[],int len)
 {
 	int i=0;
 	int mid = 0;
